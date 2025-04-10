@@ -1,0 +1,282 @@
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background: #f8f9fa;
+    color: #333;
+  }
+  
+  header {
+    position: relative;
+    height: 90vh;
+    background: url('images/header-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .nav-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+    position: relative;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .dropdown-content li a {
+    color: #333;
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .auth-buttons .btn {
+    margin-left: 10px;
+    padding: 0.5rem 1rem;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-btn {
+    padding: 0.75rem 2rem;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  /* Booking Section */
+  .booking-section {
+    display: flex;
+    padding: 4rem 2rem;
+    background: #fff;
+  }
+  
+  .booking-left,
+  .booking-right {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .booking-left img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .booking-right form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .booking-right label,
+  .booking-right input,
+  .booking-right select,
+  .booking-right textarea,
+  .booking-right button {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .booking-right input,
+  .booking-right select,
+  .booking-right textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .booking-right button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Package Cards */
+  .packages {
+    padding: 2rem;
+    background: #f0f0f0;
+    text-align: center;
+  }
+  
+  .package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .package-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  .package-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .package-card button {
+    background: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Services */
+  .services {
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .service-card {
+    background: #e9ecef;
+    padding: 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  /* Gallery */
+  .gallery {
+    padding: 2rem;
+    background: #f8f9fa;
+    text-align: center;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* About */
+  .about {
+    display: flex;
+    padding: 4rem 2rem;
+    background: #fff;
+  }
+  
+  .about-left,
+  .about-right {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .about-left img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .about-right h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background: #343a40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: #ccc;
+    text-decoration: none;
+  }
+  

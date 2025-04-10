@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust Travel</title>
+  <link rel="stylesheet" href="project5.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">Wanderlust</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#booking">Book</a></li>
+          <li class="dropdown">
+            <a href="#">Packages</a>
+            <ul class="dropdown-content">
+              <li><a href="#">United States</a></li>
+              <li><a href="#">India</a></li>
+              <li><a href="#">France</a></li>
+              <li><a href="#">Germany</a></li>
+            </ul>
+          </li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <a href="login.html" class="btn login-btn">Login</a>
+          <a href="register.html" class="btn register-btn">Register</a>
+        </div>
+      </nav>
+    </div>
+    <div class="hero">
+      <h1>Welcome to Wanderlust</h1>
+      <h2>Visit <span id="rotating-country">India</span></h2>
+      <a href="#booking" class="hero-btn">Book Now</a>
+    </div>
+  </header>
+
+  <!-- Booking Section -->
+  <section id="booking" class="booking-section">
+    <div class="booking-left">
+      <img src="images/booking.jpg" alt="Booking Image">
+    </div>
+    <div class="booking-right">
+      <h2>Book Your Trip</h2>
+      <form onsubmit="return validateBooking()">
+        <label>Where to:</label>
+        <select id="destination">
+          <option>India</option>
+          <option>France</option>
+          <option>Germany</option>
+          <option>United States</option>
+        </select>
+
+        <label>How Many Persons:</label>
+        <input type="number" id="persons" min="1">
+
+        <label>Start Date:</label>
+        <input type="date" id="startDate">
+
+        <label>End Date:</label>
+        <input type="date" id="endDate">
+
+        <label>Description:</label>
+        <textarea id="description" minlength="50" maxlength="500"></textarea>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section class="packages">
+    <h2>Our Packages</h2>
+    <div class="package-grid">
+      <!-- Repeat 9 package cards -->
+      <!-- Sample card -->
+      <div class="package-card">
+        <img src="images/france.jpg" alt="France">
+        <h3>France</h3>
+        <p>Explore the Eiffel Tower, French cuisine and art museums.</p>
+        <p>Price: $999</p>
+        <p>Rating: ⭐⭐⭐⭐</p>
+        <button>Book Now</button>
+      </div>
+      <!-- Repeat similar cards for other countries -->
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">Affordable Hotels</div>
+      <div class="service-card">Food & Drinks</div>
+      <div class="service-card">Safety Guide</div>
+      <div class="service-card">24/7 Support</div>
+      <div class="service-card">Custom Tours</div>
+      <div class="service-card">Travel Insurance</div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpg" alt="Gallery Image">
+      <img src="images/gallery2.jpg" alt="Gallery Image">
+      <img src="images/gallery3.jpg" alt="Gallery Image">
+      <!-- Add more images -->
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <div class="about-left">
+      <img src="images/about.jpg" alt="About Image">
+    </div>
+    <div class="about-right">
+      <h2>About Us</h2>
+      <p>Wanderlust Travel was established in 2010 with a mission to provide unforgettable travel experiences. With thousands of happy customers, we continue to explore new destinations and offer the best services to our travelers.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Wanderlust Travel. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="project5.js"></script>
+</body>
+</html>
